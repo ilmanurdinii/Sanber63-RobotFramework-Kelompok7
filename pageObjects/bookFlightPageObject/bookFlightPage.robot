@@ -10,6 +10,7 @@ Verify Booking Page opened
 
 Select Chicago as the departure city 
     Click Element    ${fromcity_dopdown_bookFlightPage}
+    Wait Until Element Is Visible    ${chicago_fromcity_dropdown_bookFlightPage}
     Click Element    ${chicago_fromcity_dropdown_bookFlightPage}
 
 Verify Chicago is successfully selected as the departure city
@@ -17,6 +18,7 @@ Verify Chicago is successfully selected as the departure city
 
 Select Paris as the destination city 
     Click Element    ${tocity_dropdown_bookFlightPage}
+    Wait Until Element Is Visible    ${paris_tocity_dropdown_bookFlightPage}
     Click Element    ${paris_tocity_dropdown_bookFlightPage}
 
 Verify Paris is successfully selected as the destination city
@@ -24,19 +26,21 @@ Verify Paris is successfully selected as the destination city
 
 Select business as the flight class
     Click Element    ${class_dropdown_bookFlightPage}
+    Wait Until Element Is Visible    ${business_class_dropdown_bookFlightPage}
     Click Element    ${business_class_dropdown_bookFlightPage}
 
 Verify business is successfully selected as the flight class
-    Click Element    ${class_dropdown_bookFlightPage}
-    Click Element    ${business_class_dropdown_bookFlightPage}
+    Wait Until Element Is Visible    ${business_class_dropdown_bookFlightPage}
 
 Select start date 
     Click Element    ${start_date_bookFlightPage}
+    Wait Until Element Is Visible    ${01agustus2019_bookFlightPage}
     Click Element    ${01agustus2019_bookFlightPage}
     Click Element    ${oke_button_bookFlightPage}
 
 Select end date 
     Click Element    ${end_date_bookFlightPage}
+    Wait Until Element Is Visible    ${09agustus2019_bookFlightPage}
     Click Element    ${09agustus2019_bookFlightPage}
     Click Element    ${oke_button_bookFlightPage}
     
